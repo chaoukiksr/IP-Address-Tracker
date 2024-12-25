@@ -21,7 +21,7 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 2rem;
+  padding: 4rem 0rem;
   text-align: center;
   flex: 0 0 auto; 
 }
@@ -55,14 +55,16 @@ input {
 
 .ipInfo {
   width: 80%;
-  margin: 2rem auto;
+  margin: 0rem auto;
   display: flex;
   justify-content: space-between;
   padding: 1rem;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 8px;
   background: #fff;
-   flex: 0 0 auto
+   flex: 0 0 auto;
+   transform: translateY(-32px);
+   z-index: 9999;
 }
 
 .ipInfo > div {
@@ -80,24 +82,34 @@ input {
    /* height: 100%; */
 }
 #map {
-  
-  height: 300px; /* Dynamically adjusts to its parent's height */
+  /* padding: 2rem 0; */
+  height: 100%; /* Dynamically adjusts to its parent's height */
+  /* transform: translateY(-100px); */
 }
 
 
 /* Media Queries */
 @media (max-width: 768px) {
+   header{
+      padding: 2rem 2rem 8rem 2rem;
+   }
   .ipInfo {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    transform: translateY(-80px);
   }
 
   .ipInfo > div {
     border-right: none;
-    padding: 1rem 0;
+    padding: 0rem 0;
   }
-
+.ipInfo .label {
+  color: var(--Dark-Gray);
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+}
 
 }
 
