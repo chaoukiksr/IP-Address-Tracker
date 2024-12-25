@@ -53,10 +53,10 @@ const fetchData = async () => {
    }   
    
       
-   ipInfo.style.cssText = `transform: translateY(-${(56+16+16)/2}px)`
+   ipInfo.style.cssText = `transform: translateY(-${(56+24*2)/2}px)`
    // console.log(window.screen.width)
    if(window.screen.width<768){
-      ipInfo.style.cssText = `transform: translateY(-${(199.2+16+16)/2}px)`
+      ipInfo.style.cssText = `transform: translateY(-${(199.2+24*2)/2}px)`
 
    }
    // console.log(ipInfo.style)
