@@ -31,6 +31,8 @@ header h1 {
 }
 
 .action {
+  width: 80%;
+  margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -41,7 +43,7 @@ input {
   border: 1px solid var(--Dark-Gray);
   padding: 0.5rem;
   border-radius: 5px 0 0 5px;
-  width: 300px;
+  width: 40%;
 }
 
 .submitBtn {
@@ -70,8 +72,12 @@ input {
 .ipInfo > div {
   text-align: center;
   flex: 1;
+  
 }
 
+.ipInfo > div:not(:last-child){
+  border-right: 1px solid var(--Dark-Gray);
+}
 .ipInfo .label {
   color: var(--Dark-Gray);
   font-weight: 500;
@@ -80,8 +86,8 @@ input {
 .mapContainer{
    flex: 1 1 auto; /* Map takes all remaining space */
    /* height: 100%; */
-}
-#map {
+  }
+  #map {
   /* padding: 2rem 0; */
   height: 100%; /* Dynamically adjusts to its parent's height */
   /* transform: translateY(-100px); */
@@ -90,8 +96,8 @@ input {
 
 /* Media Queries */
 @media (max-width: 768px) {
-   header{
-      padding: 2rem 2rem 8rem 2rem;
+  header{
+    padding: 2rem 2rem 8rem 2rem;
    }
   .ipInfo {
     flex-direction: column;
@@ -99,12 +105,18 @@ input {
     text-align: center;
     transform: translateY(-80px);
   }
-
+  input {
+    border: 1px solid var(--Dark-Gray);
+    padding: 0.5rem;
+    border-radius: 5px 0 0 5px;
+    width: 100%;
+  }
+  
   .ipInfo > div {
     border-right: none;
     padding: 0rem 0;
   }
-.ipInfo .label {
+  .ipInfo .label {
   color: var(--Dark-Gray);
   font-size: 14px;
   font-weight: 500;
