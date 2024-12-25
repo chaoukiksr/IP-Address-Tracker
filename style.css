@@ -1,0 +1,103 @@
+:root {
+  --Very-Dark-Gray: hsl(0, 0%, 17%);
+  --Dark-Gray: hsl(0, 0%, 59%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  background-image: url('./images/pattern-bg-desktop.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2rem;
+  text-align: center;
+  flex: 0 0 auto; 
+}
+
+header h1 {
+  color: #fff;
+}
+
+.action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+input {
+  border: 1px solid var(--Dark-Gray);
+  padding: 0.5rem;
+  border-radius: 5px 0 0 5px;
+  width: 300px;
+}
+
+.submitBtn {
+  background-color: var(--Very-Dark-Gray);
+  color: #fff;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.ipInfo {
+  width: 80%;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 8px;
+  background: #fff;
+   flex: 0 0 auto
+}
+
+.ipInfo > div {
+  text-align: center;
+  flex: 1;
+}
+
+.ipInfo .label {
+  color: var(--Dark-Gray);
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+.mapContainer{
+   flex: 1 1 auto; /* Map takes all remaining space */
+   /* height: 100%; */
+}
+#map {
+  
+  height: 300px; /* Dynamically adjusts to its parent's height */
+}
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .ipInfo {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .ipInfo > div {
+    border-right: none;
+    padding: 1rem 0;
+  }
+
+
+}
+
