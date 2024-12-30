@@ -41,8 +41,8 @@ header h1 {
 
 input {
   border: 1px solid var(--Dark-Gray);
-  padding: 0.5rem;
-  border-radius: 5px 0 0 5px;
+  padding: 1rem 0.5rem;
+  border-radius: 12px 0 0 12px;
   width: 40%;
 }
 
@@ -51,7 +51,8 @@ input {
   color: #fff;
   border: none;
   border-radius: 0 5px 5px 0;
-  padding: 0.5rem 1rem;
+  padding: 1rem 1.5rem;
+  /* height: 100%; */
   cursor: pointer;
 }
 
@@ -89,7 +90,9 @@ input {
   }
   #map {
     /* padding: 2rem 0; */
-    height: 100%; /* Dynamically adjusts to its parent's height */
+    position: relative;
+    z-index: -1;
+    height: 100vh; /* Dynamically adjusts to its parent's height */
   /* transform: translateY(-100px); */
 }
 
@@ -107,7 +110,7 @@ input {
   }
   input {
     border: 1px solid var(--Dark-Gray);
-    padding: 0.5rem;
+    padding: 1rem 0.5rem;
     border-radius: 5px 0 0 5px;
     width: 100%;
   }
